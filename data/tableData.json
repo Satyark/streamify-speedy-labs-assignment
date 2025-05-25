@@ -1,0 +1,154 @@
+{
+  "recentStreams": [
+    {
+      "id": 1,
+      "songName": "Cruel Summer",
+      "artist": "Taylor Swift",
+      "dateStreamed": "2023-12-01T14:23:54Z",
+      "streamCount": 12567,
+      "userId": "U12345678",
+      "duration": 178,
+      "location": "United States"
+    },
+    {
+      "id": 2,
+      "songName": "Flowers",
+      "artist": "Miley Cyrus",
+      "dateStreamed": "2023-12-01T15:45:12Z",
+      "streamCount": 10982,
+      "userId": "U23456789",
+      "duration": 195,
+      "location": "United Kingdom"
+    },
+    {
+      "id": 3,
+      "songName": "Kill Bill",
+      "artist": "SZA",
+      "dateStreamed": "2023-12-01T16:32:45Z",
+      "streamCount": 9875,
+      "userId": "U34567890",
+      "duration": 212,
+      "location": "Canada"
+    },
+    {
+      "id": 4,
+      "songName": "As It Was",
+      "artist": "Harry Styles",
+      "dateStreamed": "2023-12-01T17:56:23Z",
+      "streamCount": 8765,
+      "userId": "U45678901",
+      "duration": 167,
+      "location": "United States"
+    },
+    {
+      "id": 5,
+      "songName": "Anti-Hero",
+      "artist": "Taylor Swift",
+      "dateStreamed": "2023-12-01T18:34:56Z",
+      "streamCount": 7654,
+      "userId": "U56789012",
+      "duration": 189,
+      "location": "United Kingdom"
+    },
+    {
+      "id": 6,
+      "songName": "Unholy",
+      "artist": "Sam Smith & Kim Petras",
+      "dateStreamed": "2023-12-01T19:12:34Z",
+      "streamCount": 6543,
+      "userId": "U67890123",
+      "duration": 156,
+      "location": "Canada"
+    },
+    {
+      "id": 7,
+      "songName": "Die For You",
+      "artist": "The Weeknd",
+      "dateStreamed": "2023-12-01T20:23:45Z",
+      "streamCount": 5432,
+      "userId": "U78901234",
+      "duration": 221,
+      "location": "United States"
+    },
+    {
+      "id": 8,
+      "songName": "Calm Down",
+      "artist": "Rema",
+      "dateStreamed": "2023-12-01T21:34:56Z",
+      "streamCount": 4321,
+      "userId": "U89012345",
+      "duration": 198,
+      "location": "United Kingdom"
+    },
+    {
+      "id": 9,
+      "songName": "Blinding Lights",
+      "artist": "The Weeknd",
+      "dateStreamed": "2023-12-01T22:45:12Z",
+      "streamCount": 3210,
+      "userId": "U90123456",
+      "duration": 203,
+      "location": "Canada"
+    },
+    {
+      "id": 10,
+      "songName": "Shape of You",
+      "artist": "Ed Sheeran",
+      "dateStreamed": "2023-12-01T23:12:34Z",
+      "streamCount": 2109,
+      "userId": "U01234567",
+      "duration": 187,
+      "location": "United States"
+    },
+    {
+      "id": 11,
+      "songName": "Bad Habit",
+      "artist": "Steve Lacy",
+      "dateStreamed": "2023-12-02T00:23:45Z",
+      "streamCount": 1987,
+      "userId": "U12345678",
+      "duration": 232,
+      "location": "United Kingdom"
+    },
+    {
+      "id": 12,
+      "songName": "Creepin'",
+      "artist": "Metro Boomin, The Weeknd & 21 Savage",
+      "dateStreamed": "2023-12-02T01:34:56Z",
+      "streamCount": 1876,
+      "userId": "U23456789",
+      "duration": 175,
+      "location": "Canada"
+    },
+    {
+      "id": 13,
+      "songName": "Sure Thing",
+      "artist": "Miguel",
+      "dateStreamed": "2023-12-02T02:45:12Z",
+      "streamCount": 1765,
+      "userId": "U34567890",
+      "duration": 193,
+      "location": "United States"
+    },
+    {
+      "id": 14,
+      "songName": "Under The Influence",
+      "artist": "Chris Brown",
+      "dateStreamed": "2023-12-02T03:12:34Z",
+      "streamCount": 1654,
+      "userId": "U45678901",
+      "duration": 185,
+      "location": "United Kingdom"
+    },
+    {
+      "id": 15,
+      "songName": "Snooze",
+      "artist": "SZA",
+      "dateStreamed": "2023-12-02T04:23:45Z",
+      "streamCount": 1543,
+      "userId": "U56789012",
+      "duration": 203,
+      "location": "Canada"
+    }
+  ]
+}

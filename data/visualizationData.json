@@ -1,0 +1,48 @@
+{
+    "userGrowth": [
+      { "month": "Jan", "totalUsers": 1850000, "activeUsers": 1425000 },
+      { "month": "Feb", "totalUsers": 1900000, "activeUsers": 1450000 },
+      { "month": "Mar", "totalUsers": 1975000, "activeUsers": 1500000 },
+      { "month": "Apr", "totalUsers": 2050000, "activeUsers": 1550000 },
+      { "month": "May", "totalUsers": 2125000, "activeUsers": 1600000 },
+      { "month": "Jun", "totalUsers": 2200000, "activeUsers": 1650000 },
+      { "month": "Jul", "totalUsers": 2250000, "activeUsers": 1700000 },
+      { "month": "Aug", "totalUsers": 2300000, "activeUsers": 1725000 },
+      { "month": "Sep", "totalUsers": 2350000, "activeUsers": 1750000 },
+      { "month": "Oct", "totalUsers": 2400000, "activeUsers": 1780000 },
+      { "month": "Nov", "totalUsers": 2425000, "activeUsers": 1800000 },
+      { "month": "Dec", "totalUsers": 2457893, "activeUsers": 1823456 }
+    ],
+    "revenueDistribution": [
+      { "source": "Premium Subscriptions", "value": 7845620, "percentage": 62.4 },
+      { "source": "Family Plans", "value": 3256780, "percentage": 25.9 },
+      { "source": "Advertisements", "value": 1245670, "percentage": 9.9 },
+      { "source": "Partnerships", "value": 219820, "percentage": 1.8 }
+    ],
+    "topSongs": [
+      { "name": "Cruel Summer", "artist": "Taylor Swift", "streams": 1842567, "color": "hsl(var(--chart-1))" },
+      { "name": "Flowers", "artist": "Miley Cyrus", "streams": 1654321, "color": "hsl(var(--chart-2))" },
+      { "name": "Kill Bill", "artist": "SZA", "streams": 1567432, "color": "hsl(var(--chart-3))" },
+      { "name": "As It Was", "artist": "Harry Styles", "streams": 1432156, "color": "hsl(var(--chart-4))" },
+      { "name": "Anti-Hero", "artist": "Taylor Swift", "streams": 1345789, "color": "hsl(var(--chart-5))" }
+    ],
+    "genreDistribution": [
+      { "genre": "Pop", "streams": 35672145, "percentage": 40.8 },
+      { "genre": "Hip-Hop", "streams": 17586432, "percentage": 20.1 },
+      { "genre": "R&B", "streams": 11256789, "percentage": 12.9 },
+      { "genre": "Rock", "streams": 8456321, "percentage": 9.7 },
+      { "genre": "Electronic", "streams": 7845123, "percentage": 9.0 },
+      { "genre": "Country", "streams": 3952467, "percentage": 4.5 },
+      { "genre": "Other", "streams": 2663284, "percentage": 3.0 }
+    ],
+    "streamsByTime": [
+      { "hour": "00:00", "streams": 1245678 },
+      { "hour": "03:00", "streams": 765432 },
+      { "hour": "06:00", "streams": 987654 },
+      { "hour": "09:00", "streams": 2345678 },
+      { "hour": "12:00", "streams": 3456789 },
+      { "hour": "15:00", "streams": 3987654 },
+      { "hour": "18:00", "streams": 4567890 },
+      { "hour": "21:00", "streams": 3245678 }
+    ]
+  }

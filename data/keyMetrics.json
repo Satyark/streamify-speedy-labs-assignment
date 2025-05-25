@@ -1,0 +1,21 @@
+{
+    "totalUsers": 2457893,
+    "activeUsers": 1823456,
+    "totalStreams": 87432561,
+    "revenue": 12567890,
+    "topArtist": {
+      "name": "Taylor Swift",
+      "streams": 4562387,
+      "image": "https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    },
+    "growthRate": {
+      "users": 12.4,
+      "streams": 18.7,
+      "revenue": 15.2
+    },
+    "subscriptionTier": {
+      "free": 1235678,
+      "premium": 987456,
+      "family": 234759
+    }
+  }
