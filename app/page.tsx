@@ -32,7 +32,6 @@ export default function Home() {
               </section>
 
               <section className="grid gap-6 md:grid-cols-3">
-                {/* <Revenue /> */}
                 <RevenuePieChart />
                 <UserGrowth />
               </section>

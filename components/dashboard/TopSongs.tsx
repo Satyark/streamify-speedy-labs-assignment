@@ -1,6 +1,6 @@
 "use client";
 import { TrendingUp } from "lucide-react"
-import { Bar, BarChart, CartesianGrid, LabelList, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts"
+import { Bar, BarChart, CartesianGrid, LabelList, ResponsiveContainer, Tooltip, TooltipProps, XAxis, YAxis } from "recharts"
 import {
   Card,
   CardContent,
@@ -12,35 +12,41 @@ import {
 import useData from "@/store/useData"
 import { formatNumber } from "@/lib/utils"
 import { Skeleton } from "../ui/skeleton"
+import { NameType } from "recharts/types/component/DefaultTooltipContent";
+import { ValueType } from "recharts/types/component/DefaultTooltipContent";
+import { TopSong } from "@/lib/types";
 
 export default function TopSongs() {
     const isLoading = false;
-    if (isLoading) {
-        return <div className='grid gap-4 md:grid-cols-2 lg:grid-cols-3'>
-            {Array.from({ length: 6 }).map((_, i) => (
-                <Skeleton key={i} className="h-8 w-1/2" />
-            ))}
-        </div>
-    }
     const { visualizationData } = useData();
     const topSongs = visualizationData.topSongs;
-    const CustomTooltip = ({ active, payload }: any) => {
-        if (active && payload && payload.length) {
-            const data = payload[0].payload;
-            return (
-              <div className="bg-background p-3 border border-border rounded-md shadow-sm">
-                <p className="font-medium">{data.name}</p>
-                <p className="text-sm">
-                  Artist: <span className="font-medium">{data.artist}</span>
-                </p>
-                <p className="text-sm">
-                  Streams: <span className="font-medium">{formatNumber(data.streams)}</span>
-                </p>
-              </div>
-            );
-        }
-        return null;
-      };
+    if (isLoading) {
+      return <div className='grid gap-4 md:grid-cols-2 lg:grid-cols-3'>
+          {Array.from({ length: 6 }).map((_, i) => (
+              <Skeleton key={i} className="h-8 w-1/2" />
+          ))}
+      </div>
+  }
+  const CustomTooltip = ({
+    active,
+    payload,
+    label,
+  }: TooltipProps<ValueType, NameType>) => {
+    if (active && payload && payload.length && typeof payload[0].value === 'number' && typeof payload[1].value === 'number') {
+      return (
+        <div className="bg-background p-3 border border-border rounded-md shadow-sm">
+          <p className="font-medium">{label}</p>
+          <p className="text-sm text-primary">
+            Total Users: <span className="font-medium">{formatNumber(payload[0].value)}</span>
+          </p>
+          <p className="text-sm text-chart-2">
+            Active Users: <span className="font-medium">{formatNumber(payload[1].value)}</span>
+          </p>
+        </div>
+      );
+    }
+    return null;
+  };
   return (
     <Card className="col-span-2 sm:col-span-1">
       <CardHeader>
@@ -71,7 +77,7 @@ export default function TopSongs() {
             />
         <Tooltip content={<CustomTooltip />} />
 
-        {topSongs.map((entry: any, index: number) => (   
+        {topSongs.map((entry: TopSong, index: number) => (   
             <Bar dataKey="streams" layout="vertical" radius={5} fill={entry.color} key={index}>
                 <LabelList
                   dataKey="artist"

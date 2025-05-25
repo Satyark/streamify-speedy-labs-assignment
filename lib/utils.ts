@@ -1,6 +1,7 @@
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
 import { format } from 'date-fns';
+import { StreamData } from "./types";
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
@@ -40,6 +41,6 @@ export function calculateGrowth(current: number, previous: number): number {
   return ((current - previous) / previous) * 100;
 }
 
-export function filterData(data: any[], filter: any[]) {
+export function filterData(data: StreamData[], filter: string[]) {
   return data.filter(item => filter.includes(item.location));
 }

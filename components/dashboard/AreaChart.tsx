@@ -1,29 +1,35 @@
 "use client"
 import React from 'react';
-import { Area, AreaChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+import { Area, AreaChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip, TooltipProps, XAxis, YAxis } from "recharts";
 import useData from '@/store/useData';
 import { formatNumber } from '@/lib/utils';
+import { ValueType } from 'recharts/types/component/DefaultTooltipContent';
+import { NameType } from 'recharts/types/component/DefaultTooltipContent';
 
 
 const AreaLineChart = () => {
     const { visualizationData } = useData();
     const userGrowthData = visualizationData.userGrowth;
-    const CustomTooltip = ({ active, payload, label }: any) => {
-        if (active && payload && payload.length) {
-          return (
-            <div className="bg-background p-3 border border-border rounded-md shadow-sm">
-              <p className="font-medium">{label}</p>
-              <p className="text-sm text-primary">
-                Total Users: <span className="font-medium">{formatNumber(payload[0].value)}</span>
-              </p>
-              <p className="text-sm text-chart-2">
-                Active Users: <span className="font-medium">{formatNumber(payload[1].value)}</span>
-              </p>
-            </div>
-          );
-        }
-        return null;
-      };
+    const CustomTooltip = ({
+      active,
+      payload,
+      label,
+    }: TooltipProps<ValueType, NameType>) => {
+      if (active && payload && payload.length && typeof payload[0].value === 'number' && typeof payload[1].value === 'number') {
+        return (
+          <div className="bg-background p-3 border border-border rounded-md shadow-sm">
+            <p className="font-medium">{label}</p>
+            <p className="text-sm text-primary">
+              Total Users: <span className="font-medium">{formatNumber(payload[0].value)}</span>
+            </p>
+            <p className="text-sm text-chart-2">
+              Active Users: <span className="font-medium">{formatNumber(payload[1].value)}</span>
+            </p>
+          </div>
+        );
+      }
+      return null;
+    };
   return (
     <ResponsiveContainer width="100%" height="100%">
       {/* <ChartContainer config={chartConfig}> */}

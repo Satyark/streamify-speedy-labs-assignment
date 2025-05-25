@@ -20,7 +20,7 @@ interface HeaderProps {
 }
 
 const Header : React.FC<HeaderProps> = ({ className }) => {
-    const { isCollapsed, mobileOpen, toggleCollapsed, toggleMobileOpen } = useSidebarStore();
+    const { isCollapsed, mobileOpen, toggleMobileOpen } = useSidebarStore();
   return (
     <header className={cn('flex h-16 items-center justify-between border-b border-border px-6', className)}>
       <div className={cn("", isCollapsed ? "w-full" : "w-1/3")}>
