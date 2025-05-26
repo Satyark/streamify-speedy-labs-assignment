@@ -10,7 +10,7 @@ import RevenuePieChart from "@/components/dashboard/RevenuePieChart";
 import TopSongs from "@/components/dashboard/TopSongs";
 import StreamTable from "@/components/dashboard/StreamTable";
 
-export default function Home() {
+export default function Dashboard() {
   const { isCollapsed } = useSidebarStore(); 
   return (
     <div className="flex min-h-screen bg-background">
@@ -19,7 +19,7 @@ export default function Home() {
         <div className={cn("flex-1", isCollapsed ? "md:ml-16" : "md:ml-64")}>
           <Header />
           <main className="p-6">
-            <div className="mb-6">
+            <div className="mb-6" id="key-metrics">
               <h1 className="text-2xl font-bold tracking-tight">Analytics Dashboard</h1>
               <p className="text-md text-muted-foreground">Overview of key metrics and performance indicators</p>
             </div>
@@ -27,20 +27,20 @@ export default function Home() {
 
             <div className="space-y-6">
               {/* key metrics */}
-              <section className="">
+              <section >
                 <KeyMetrics />
               </section>
 
-              <section className="grid gap-6 md:grid-cols-3">
+              <section className="grid gap-6 md:grid-cols-3" id="user-growth">
                 <RevenuePieChart />
                 <UserGrowth />
               </section>
               
-              <section>
+              <section id="top-songs">
                 <TopSongs />
               </section>
 
-              <section>
+              <section id="streams">
                 <StreamTable />
               </section>
             </div>
