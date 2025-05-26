@@ -89,8 +89,8 @@ I approached this project by breaking the UI into **three primary sections**:
 /libs → Utility functions (formatters, helpers
 
 ## Trade-offs & Decisions
-Static JSON over API calls: Used local data files to simulate backend for faster iteration.
-shadcn/ui: Chosen for its minimalistic and accessible components.
-TanStack Table: Preferred for advanced capabilities like virtual rendering, sorting, and performance.
+- Static JSON over API calls: Used local data files to simulate backend for faster iteration.
+- shadcn/ui: Chosen for its minimalistic and accessible components.
+- TanStack Table: Preferred for advanced capabilities like virtual rendering, sorting, and performance.
 
 
