@@ -36,8 +36,8 @@ const Sidebar : React.FC<SidebarProps> = ({ className }) => {
         { name: 'User Growth', icon: <Users className="h-5 w-5" />, href: '/#user-growth' },
         { name: 'Top Songs', icon: <Music className="h-5 w-5" />, href: '/#top-songs' },
         { name: 'Streams', icon: <Mic2 className="h-5 w-5" />, href: '/#streams' },
-        { name: 'Settings', icon: <Settings className="h-5 w-5" />, href: '/settings' },
-        { name: 'Help', icon: <HelpCircle className="h-5 w-5" />, href: '/help' },
+        { name: 'Settings', icon: <Settings className="h-5 w-5" />, href: '/' },
+        { name: 'Help', icon: <HelpCircle className="h-5 w-5" />, href: '/' },
       ];
   return (
     <>
