@@ -16,14 +16,16 @@ export const columns: ColumnDef<RecentStream>[] = [
   {
     accessorKey: "songName",
     header: "Song",
-    cell: ({ row }) => row.original.songName
+    cell: ({ row }) => row.original.songName,
+    enableSorting: false
   },
   {
     accessorKey: "artist",
     header: "Artist",
     cell: ({ row }) => {const artist = row.original.artist.split(','); 
       return artist[0];
-    }
+    },
+    enableSorting: true
   },
   {
     accessorKey: "dateStreamed",
@@ -49,10 +51,12 @@ export const columns: ColumnDef<RecentStream>[] = [
       const secs = row.original.duration % 60
       return `${mins}:${secs.toString().padStart(2, "0")}`
     },
+    enableSorting: false,
   },
   {
     accessorKey: "location",
     header: "Location",
-    cell: ({ row }) => row.original.location
+    cell: ({ row }) => row.original.location,
+    enableSorting: false
   }
 ]
