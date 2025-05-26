@@ -97,7 +97,7 @@ const Sidebar : React.FC<SidebarProps> = ({ className }) => {
             </Avatar>
             {!isCollapsed && <span className='text-sm font-medium'>John Doe <p className='text-xs text-muted-foreground'>Admin</p></span>}
             </div>
-            <Button variant="ghost" className="w-full" onClick={toggleCollapsed}>
+            <Button variant="ghost" className="w-full">
                 <LogOut className="h-5 w-5" />
                 {!isCollapsed && <span>Logout</span>}
             </Button>

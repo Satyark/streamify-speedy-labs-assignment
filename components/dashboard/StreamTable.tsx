@@ -29,9 +29,9 @@ const StreamTable = () => {
    {isFilterOpen && <div className='flex flex-row gap-4 mb-4 ml-6 mr-6 border rounded-md p-4'>
         <div className='flex flex-col gap-2'>
             <h3 className='text-sm font-medium text-muted-foreground'>Locations</h3>
-            <div className='grid grid-cols-3 gap-2'>
+            <div className='flex gap-5'>
                 {locations.map((location) => (
-                    <span key={location} className='flex gap-2 text-sm mt-2'>
+                    <span key={location} className='flex items-center justify-start gap-2 text-sm'>
                     <Checkbox key={location} checked={selectedLocations.includes(location)} onCheckedChange={(checked) => {
                         if (checked) {
                             setSelectedLocations([...selectedLocations, location]);
