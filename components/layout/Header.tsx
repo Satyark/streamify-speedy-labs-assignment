@@ -13,7 +13,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { cn } from '@/lib/utils';
 import { useSidebarStore } from '@/store/useSidebarStore';
-import ModeToggle from '../mode-toggle';
+import ModeToggle from '../ui/mode-toggle';
 
 interface HeaderProps {
   className?: string;
