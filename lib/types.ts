@@ -60,12 +60,12 @@ export interface KeyMetrics {
   
   export interface StreamData {
     id: number;
-    songName?: string;
-    artist?: string;
-    dateStreamed?: string;
+    songName: string;
+    artist: string;
+    dateStreamed: string;
     streamCount: number;
-    userId?: string;
-    duration?: number;
+    userId: string;
+    duration: number;
     location: string;
   }
   

@@ -43,14 +43,14 @@ import {
   
     test('filterData', () => {
       const mockData: StreamData[] = [
-        { id: 1, location: 'US', streamCount: 1000 },
-        { id: 2, location: 'IN', streamCount: 2000 },
-        { id: 3, location: 'UK', streamCount: 3000 },
+        { id: 1, location: 'US', streamCount: 1000, songName: 'Song 1', artist: 'Artist 1', dateStreamed: '2023-12-25T15:30:00Z', userId: '1', duration: 100 },
+        { id: 2, location: 'IN', streamCount: 2000, songName: 'Song 2', artist: 'Artist 2', dateStreamed: '2023-12-25T15:30:00Z', userId: '2', duration: 200 },
+        { id: 3, location: 'UK', streamCount: 3000, songName: 'Song 3', artist: 'Artist 3', dateStreamed: '2023-12-25T15:30:00Z', userId: '3', duration: 300 },
       ];
   
       expect(filterData(mockData, ['US', 'UK'])).toEqual([
-        { id: 1, location: 'US', streamCount: 1000 },
-        { id: 3, location: 'UK', streamCount: 3000 }
+        { id: 1, location: 'US', streamCount: 1000, songName: 'Song 1', artist: 'Artist 1', dateStreamed: '2023-12-25T15:30:00Z', userId: '1', duration: 100 },
+        { id: 3, location: 'UK', streamCount: 3000, songName: 'Song 3', artist: 'Artist 3', dateStreamed: '2023-12-25T15:30:00Z', userId: '3', duration: 300 }
       ]);
     });
   });
